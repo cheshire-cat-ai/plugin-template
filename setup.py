@@ -11,7 +11,9 @@ import glob
 if __name__ == "__main__":
     repo_name = input("What is the name of your plugin (full name with spaces) ? ")
 
-    os.rename("my_plugin", repo_name)
+    snake_name = ("_").join(repo_name.lower().split(" "))
+
+    os.rename("my_plugin", snake_name)
 
     for file in glob.glob(os.path.join(".", "**", "*.*"), recursive=True):
         if os.path.basename(file) == "setup.py":
@@ -20,7 +22,7 @@ if __name__ == "__main__":
         with open(file, "r") as f:
             content = f.read()
 
-        replaced = content.replace("my_plugin", ("_").join(repo_name.lower().split(" "))).replace("My plugin", repo_name.title())
+        replaced = content.replace("my_plugin", snake_name).replace("My plugin", repo_name.title())
 
         with open(file, "w") as f:
             f.write(replaced)
