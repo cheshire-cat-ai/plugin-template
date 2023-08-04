@@ -1,10 +1,10 @@
 {
     "name": "My plugin",
     "version": "0.0.1",
-    "description": "Description of my plugin.",
+    "description": "Description of my_plugin.",
     "author_name": "Me",
-    "author_url": "https://myportfolio.me",
-    "plugin_url": "https://github.com/link_to_my_plugin_repository",
+    "author_url": "https://mywebsite.me",
+    "plugin_url": "https://github.com/my_name/my_plugin",
     "tags": "cat, template, example",
-    "thumb": "my_plugin_logo.png"
+    "thumb": "my_plugin.png"
 }
