@@ -1,0 +1,10 @@
+{
+    "name": "My plugin",
+    "version": "0.0.1",
+    "description": "Description of my plugin.",
+    "author_name": "Me",
+    "author_url": "https://myportfolio.me",
+    "plugin_url": "https://github.com/link_to_my_plugin_repository",
+    "tags": "cat, template, example",
+    "thumb": "my_plugin_logo.png"
+}

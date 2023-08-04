@@ -1,2 +1,3 @@
-# plugin-template
- A generic template to create a plugin for the Cheshire Cat AI.
+# My Plugin
+
+Write here all the useful informations about your plugin.
