@@ -20,7 +20,7 @@ env:
   TAG_EXISTS: false
 
 jobs:
-  test:
+  release:
 
     strategy:
       matrix:
