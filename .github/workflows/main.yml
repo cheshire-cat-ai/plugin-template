@@ -11,6 +11,10 @@ on:
     tags:
       - "v*.*.*"
 
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   PLUGIN_JSON: "0.0.1"
 
