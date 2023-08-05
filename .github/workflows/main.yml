@@ -54,6 +54,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'my_plugin.zip'
+          exclusions: '*.git* setup.py'
           directory: '.'
           path: '.'
       - name: Upload Release
