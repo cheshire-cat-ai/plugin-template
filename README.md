@@ -2,7 +2,7 @@
 
 Write here all the useful informations about your plugin.
 
-This repository is the template to automate the official the Cheshire Cat AI plugins. 
+This repository is the template to automate the release of official Cheshire Cat AI plugins. 
 
 ## Usage
 
