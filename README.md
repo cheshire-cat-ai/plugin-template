@@ -13,6 +13,7 @@ This repository is the template to automate the official the Cheshire Cat AI plu
 python setup.py
 ```
 The script will prompt you to write the name of your plugin and make an initial setup setting the name in the files.
+
 4. Start developing!
 
 > **Important**
