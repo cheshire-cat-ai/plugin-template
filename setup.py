@@ -15,8 +15,7 @@ if __name__ == "__main__":
 
     snake_name = ("_").join(repo_name.lower().split(" "))
 
-    os.rename("my_plugin/my_plugin.py", f"my_plugin/{snake_name}.py")
-    os.rename("my_plugin", snake_name)
+    os.rename("my_plugin.py", snake_name)
     
     for file in pathlib.Path(".").glob('**/*.*'):
         filename = str(file)
