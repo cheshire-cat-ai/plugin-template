@@ -8,7 +8,7 @@ This repository is the template to automate the release of official Cheshire Cat
 
 ## Usage
 
-1. Create a new repository clicking on the green `Use this template` button.
+1. Create a new repository clicking on the `Use this template` button.
 2. Clone your new repo directly in the Cat's `plugins` folder.
 3. Run the `setup.py` script:
 ```bash
