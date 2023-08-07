@@ -2,7 +2,7 @@
 
 [![Awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=Awesome+plugin&color=000000&style=for-the-badge&logo=cheshire_cat_ai)](https://)
 
-Write here all the useful informations about your plugin.
+Write here all the useful information about your plugin.
 
 This repository is the template to automate the release of official Cheshire Cat AI plugins. 
 
