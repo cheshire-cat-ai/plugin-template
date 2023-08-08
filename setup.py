@@ -25,6 +25,9 @@ if __name__ == "__main__":
         if fnmatch.fnmatch(filename, "__pycache__/*"):  # Exclude __pycache__ directory
             continue
 
+        if fnmatch.fnmatch(filename, ".idea*"):
+            continue
+
         if fnmatch.fnmatch(filename, sys.argv[0]):  # Exclude the script file itself
             continue
 
@@ -34,6 +37,7 @@ if __name__ == "__main__":
         if file.is_dir():
             continue
         else:
+            print(file)
             with open(file, "r", encoding="utf-8", errors="ignore") as f:
                 content = f.read()
 
