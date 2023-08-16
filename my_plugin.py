@@ -1,6 +1,6 @@
 from cat.mad_hatter.decorators import tool, hook
 from pydantic import BaseModel
-from datetime import datetime, date
+from datetime import datetime
 
 class MySettings(BaseModel):
     required_int: int
@@ -15,10 +15,12 @@ def plugin_settings_schema():
     return MySettings.schema()
 
 @tool
-def get_the_time(tool_input, cat):
-    """Retrieves current time and clock. Input is always None."""
+def get_the_day(tool_input, cat):
+    """Get the day of the week. Input is always None."""
 
-    return str(datetime.now())
+    dt = datetime.now()
+
+    return dt.strftime('%A')
 
 @hook
 def before_cat_sends_message(message, cat):
