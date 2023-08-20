@@ -21,19 +21,23 @@ env:
   PLUGIN_NAME: "my_plugin"
 
 jobs:
+# This will be deleted by setup.py
   check:
     runs-on: ubuntu-latest
     outputs:
       plugin_name: ${{ steps.init.outputs.plugin_name }}
-    steps:        
+    steps:
     - name: Get plugin name
       id: init
       run: |
         echo "plugin_name=${{ env.PLUGIN_NAME }}" >> $GITHUB_OUTPUT
 
+# This is the end of the removed section
   release:
+  # This will be deleted by setup.py
     needs: check
     if: startsWith(needs.check.outputs.plugin_name, 'MY_PLUGIN') == false
+  # This is the end of the removed section
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -68,4 +72,3 @@ jobs:
           body: |
             ${{ github.event.head_commit.message }}
           token: ${{ secrets.GITHUB_TOKEN }}
-
