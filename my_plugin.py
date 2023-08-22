@@ -1,6 +1,6 @@
 from cat.mad_hatter.decorators import tool, hook
 from pydantic import BaseModel
-from datetime import datetime
+from datetime import datetime, date
 
 class MySettings(BaseModel):
     required_int: int
