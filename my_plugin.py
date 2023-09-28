@@ -1,4 +1,4 @@
-from cat.mad_hatter.decorators import tool, hook
+from cat.mad_hatter.decorators import tool, hook, plugin
 from pydantic import BaseModel
 from datetime import datetime, date
 
@@ -10,8 +10,8 @@ class MySettings(BaseModel):
     required_date: date
     optional_date: date = 1679616000
 
-@hook
-def plugin_settings_schema():   
+@plugin
+def settings_schema():   
     return MySettings.schema()
 
 @tool
