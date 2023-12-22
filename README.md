@@ -22,5 +22,5 @@ The script will prompt you to write the name of your plugin and make an initial 
 
 > **Important**
 > A new release of your plugin is triggered every time you set a new `version` in the `plugin.json` file.
-> Please, remember to set it correctly every time to want to release an update.
+> Please, remember to set it correctly every time you want to release an update.
 

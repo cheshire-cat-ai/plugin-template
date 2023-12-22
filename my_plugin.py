@@ -11,8 +11,8 @@ class MySettings(BaseModel):
     optional_date: date = 1679616000
 
 @plugin
-def settings_schema():   
-    return MySettings.schema()
+def settings_model():
+    return MySettings
 
 @tool
 def get_the_day(tool_input, cat):
